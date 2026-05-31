@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(120deg, #f6d365, #da6931);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 1.2rem;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+   
+}
+
+.input-text {
+    width: 100%;
+    padding: 10px;
+
+    font-size: 1.1rem;
+
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.input-text:focus {
+    outline: none;
+}
+
+.result-list {
+    width: 100%;
+    margin-top: 6px;
+    list-style: none;
+    background: white;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.result-list li {
+    margin: 5px;
+    padding: 8px;
+    cursor: pointer;
+    color: black;
+    transition: background 0.15s;
+    border-radius: 3px;
+}
+
+.result-list li:hover {
+    background: #f18f49;
+}
+
+.cards-container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    
+    width: 400px;
+    list-style: none;
+    font-size: 1.1rem;
+
+    background: #fff;
+    color: #222;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    border: 1px solid black;
+    transition: all 0.7s ease;
+}
+
+.card p {
+    margin: 0;
+    word-break: break-word;
+    flex: 1;
+}
+
+.btn-trash {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background-image: url("./images/delete.png");
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px;
+    flex-shrink: 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: transparent;
+    
+    cursor: pointer;
+}
+
+.btn-trash:hover {
+    transform: scale(1.2);
+    filter: brightness(0.9);
+    transition: all 0.5s ease;
+}
+
+.fall {
+    transform: translateX(400px);;
+    opacity: 0;
+}
